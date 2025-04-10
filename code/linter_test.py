@@ -1,5 +1,4 @@
 # Unused import
-import math
 
 def greet(name):
     print(f"Hello, {name}!")  # Missing newline at end of file
@@ -13,7 +12,7 @@ def unused_function():
 greet("World")
 add(1, 2)
 
-def syntax_error_function()
+def syntax_error_function():
     print("This line is missing a colon at the end of the function definition")
 
 def another_function_with_issue():
@@ -21,13 +20,9 @@ def another_function_with_issue():
     y = 20
     print(x + y)
     print("This function has an indentation error")
-  print("This line is incorrectly indented")
+    print("This line is incorrectly indented")
 
 a = 10
 b = 20
-if a > b
+if a > b:
     print("This line is missing a colon")
-
-
-
-# Trailing whitespace

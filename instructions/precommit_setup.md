@@ -8,13 +8,13 @@ Pre-commit hooks are scripts that run automatically before a commit to a reposit
 
 ## Choose the hooks
 
-You can find a list of existing pre-commit hooks in the [pre-commit's official 
-repository](https://github.com/pre-commit/pre-commit-hooks) or explore other repositories on GitHub. 
+You can find a list of existing pre-commit hooks in the [pre-commit's official
+repository](https://github.com/pre-commit/pre-commit-hooks) or explore other repositories on GitHub.
 Each hook typically comes with documentation on how to use them.
 
 ## Create a Configuration File
 
-Create a `.pre-commit-config.yaml` file in the root of your repository. 
+Create a `.pre-commit-config.yaml` file in the root of your repository.
 
 Example configuration:
 
@@ -28,17 +28,17 @@ repos:
 ```
 
 ## Installing the Hooks
-Run `pre-commit install` to set up the hooks to run automatically before 
+Run `pre-commit install` to set up the hooks to run automatically before
 each commit.
 
 ## Running Hooks Manually
 
-Use `pre-commit run --all-files` to manually run hooks on all files in 
+Use `pre-commit run --all-files` to manually run hooks on all files in
 the repository.
 
 ## Setting up Ruff in pre-commit
 
-To run Ruff on changed files before each commit, you can configure it in 
+To run Ruff on changed files before each commit, you can configure it in
 your `.pre-commit-config.yaml` like this
 
 ```yaml
@@ -49,12 +49,12 @@ repos:
     -   id: ruff
 ```
 
-This will ensure that Ruff, along with any other configured hooks, 
-runs on the files that are staged for commit. The `--fix` argument can be 
+This will ensure that Ruff, along with any other configured hooks,
+runs on the files that are staged for commit. The `--fix` argument can be
 added to automatically fix certain issues.
 
 ## Testing the Setup
 
-Make some changes to your Python files and attempt to commit them. 
-You should see Ruff and other pre-commit hooks in action, preventing the 
+Make some changes to your Python files and attempt to commit them.
+You should see Ruff and other pre-commit hooks in action, preventing the
 commit if issues are found.
